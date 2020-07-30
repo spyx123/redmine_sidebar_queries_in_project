@@ -1,0 +1,5 @@
+<%= render_sidebar_queries(IssueQuery, @project) %>
+
+<% content_for :header_tags do %>
+<%= javascript_include_tag 'fix_queries_url', :plugin => 'redmine_sidebar_queries_in_project' %>
+<% end %>
